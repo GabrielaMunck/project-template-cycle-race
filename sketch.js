@@ -137,8 +137,11 @@ function draw() {
   
     redCG.setVelocityXEach(0);
     redCG.setLifetimeEach(-1);
+}
 
     //escreva uma condição para chamar a função reset()
+   if (player1.isTouching(player2) || player2.isTouching(player3) || player1.isTouching (player3)){
+   function reset();
 }
 }
 
@@ -170,7 +173,12 @@ function redCyclists(){
 }
 
 //criar função reset aqui
-
+function reset(){
+score=0;
+player2.velocityX=0;
+player1.velocityX=0;
+player3.velocityX=0;
+}
 
 
 
